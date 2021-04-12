@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    height: 5vh;
+    background-color: black;
+}
+
+/* MAIN */
+.jumbo {
+    height: 40vh;
+    background-color: blanchedalmond;
+}
+
+.intro {
+    height: 50vh;
+    background-color: blue;
+}
+
+.tune {
+    height: 70vh;
+    background-color: blueviolet;
+}
+
+.join {
+    height: 30vh;
+    background-color: brown;   
+}
+
+.link {
+    height: 30vh;
+    background-color: burlywood;
+}
+
+.articles {
+    height: 30vh;
+    background-color: cadetblue;
+}
+
+.fail {
+    height: 40vh;
+    background-color: chartreuse;
+}
+
+.partner {
+    height: 20vh;
+    background-color: chocolate;
+}
+.dating {
+    height: 30vh;
+    background-color: coral;
+}
+
+/* FOOTER */
+
+footer {
+    height: 40vh;
+    background-color: cornflowerblue;
+}
