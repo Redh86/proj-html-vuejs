@@ -10,24 +10,21 @@
 </head>
 <body>
     <header>
-        <img src="" alt="">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <button></button>
-        <div>
-            <i></i>
-            <i></i>
+        <div id="head" >
+            <img :src="image(logo)" alt="">
+            <ul>
+                <li v-for="element in navBar">{{element}}</li>
+            </ul>
+            <div><span>{{btn}}</span></div>
+            <div>
+                <i :class="i[1]"></i>
+                <i :class="i[0]"></i>
+            </div>
         </div>
+
     </header>
 
     <main>
-
         <div class="jumbo">
             <div class="jumbo_text">
                 <h4>Certified fitness professional</h4>
@@ -36,7 +33,7 @@
                 <p>Curabitur non nulla sit amet nisi tempus convallis quis ac lectus dolor sit amet.</p>
             </div>
             <div>
-                <div class="span_cev sim_btn_blue">
+                <div class="span_cev sim_btn_you">
                     <i class="fab fa-youtube"></i> <span>Visit my Youtube channel</span> 
                 </div>
                 <div class="span_cev sim_btn">
@@ -75,45 +72,49 @@
                 <h3>FInd a partner</h3>
             </div>
             <div class="intro_text">
-                <h2></h2>
+                <h2>"How you respond to the challenge in the second half will determinate ehat you become after the game, whether you are a winner or a looser."</h2>
                 <div class="triple_cevron"></div>
-                <div class="intro_utn"></div>
+                <div class="intro_utn">
+                    <img src="img\avatar-1-2x.jpg" alt=""> <span>Brad Johnson</span> <span>Las Vegas</span>
+                </div>
             </div>
         </div>
         <!-- FINE INTRO -->
         <div class="tune">
             <div class="ads_girl">
-                <i class="player"></i>
+                <i class="player" class="fas fa-play"></i>
             </div>
             <div class="tune_text">
-                <h4></h4>
-                <h2></h2>
+                <h4>Tune up your workouts</h4>
+                <h2>The best healt & fitness advice online</h2>
                 <div class="youtube"></div>
-                <p></p>
-                <button></button>
+                <p>Arcu eu facilist ut quisque placerat nunc habitat. Magna sempre moutris, venrandis, leo integer sut pallentesque.</p>
+                <div class="span_cev sim_btn_you">
+                    <i class="fab fa-youtube"></i> <span>Visit my Youtube channel</span> 
+                </div>
             </div>
             <div class="tune_video">
                 <div class="tune_video_title">
-                    <h4></h4>
+                    <h4>Featured playlist</h4>
                     <div class="span_cev">
-                        <span></span> <i></i> 
+                        <span>View all videos</span> <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
                 <div>
                     <img src="" alt="">
-                    <i class="player"></i>
+                    <i class="player" class="fas fa-play"></i>
                     <h5></h5>
                     <p></p>
                 </div>
                 <div>
                     <img src="" alt="">
-                    <i class="player"></i>
+                    <i class="player" class="fas fa-play"></i>
                     <h5></h5>
                     <p></p>
                 </div>
                 <div>
                     <img src="" alt="">
-                    <i class="player"></i>
+                    <i class="player" class="fas fa-play"></i>
                     <h5></h5>
                     <p></p>
                 </div>    
@@ -262,6 +263,31 @@
         </div>
         <!-- FINE DATING -->
     </main>
-    <footer></footer>
+    <footer>
+        <div id="foot">
+            <div>
+                <img :src="image(logo)" alt="">
+                <p>{{text}}</p>
+                <div v-for="icon in icons">
+                    {{icon}}
+                </div>
+            </div>
+            <div>
+                <h4>{{ulTitle}}</h4>
+                <ul>
+                    <li v-for="element in posts">{{element}}</li>
+                </ul>
+            </div>
+            <div>
+                <h4>{{contact}}</h4>
+                <p>{{adress}}</p>
+                <p>{{mobile}}</p>
+                <p>{{email}}</p>    
+            </div>
+            <hr>
+            <p>{{copyright}}</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
