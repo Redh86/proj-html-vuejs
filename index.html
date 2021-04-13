@@ -11,14 +11,13 @@
 <body>
     <header>
         <div id="head" >
-            <img :src="image(logo)" alt="">
+            <img :src="img" alt="">
             <ul>
                 <li v-for="element in navBar">{{element}}</li>
             </ul>
             <div><span>{{btn}}</span></div>
-            <div>
-                <i :class="i[1]"></i>
-                <i :class="i[0]"></i>
+            <div v-for="element in i">
+                <i :class="element"></i>
             </div>
         </div>
 
@@ -266,10 +265,10 @@
     <footer>
         <div id="foot">
             <div>
-                <img :src="image(logo)" alt="">
+                <img :src="img" alt="">
                 <p>{{text}}</p>
-                <div v-for="icon in icons">
-                    {{icon}}
+                <div v-for="element in icons">
+                    <i :class="element"></i>
                 </div>
             </div>
             <div>
