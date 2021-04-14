@@ -33,7 +33,7 @@ header {
 
 .triple_cevron {
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 .triple_cevron i {
     margin: 0;
@@ -42,14 +42,17 @@ header {
 
 /* MAIN */
 .jumbo {
-    height: 40vh;
+    display: flex;
+    height: 70vh;
     background-image: url("../img/slider82x-scaled.jpg");
+    background-position: top;
+    background-size: 100%;
+    align-items: center;
 }
 .jumbo_wrap {
     display: flex;
     width: 90%;
-    align-content: center;
-
+    align-items: center;
 }
 .jumbo_text * {
     margin-top: 20px;
@@ -89,13 +92,84 @@ header {
     background-color:black;
     margin-left: 10px;
 }
+.player {
+    color:#4154fe;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: white;
+    align-self: center;
+}
 
 /* INTRO */
 
 .intro {
-    height: 50vh;
-    background-color: blue;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, blue, red);
 }
+.intro_wrap {
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+.intro_row {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: -100px;
+}
+.intro_square {
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    
+}
+.intro_row img {
+    width: 100%;
+    filter: brightness(0.7);
+    border-bottom-right-radius: 25px;
+}
+.intro_square_text{
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    left: 50px;
+}
+.intro_square_text .triple_cevron {
+    margin-bottom: 20px;
+}
+.intro_square_text h4 {
+    color: yellow;
+}
+.intro_text {
+    position: absolute;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    height: 600px;
+    width: 300px;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro_utn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.intro_utn img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+
+
+
 /* TUNE */
 .tune {
     height: 70vh;
