@@ -21,12 +21,16 @@ header {
     height: 50vh;
     background-color: blue;
 }
-
+/* TUNE */
 .tune {
     height: 70vh;
     background-color: blueviolet;
 }
-
+.tune img {
+    display: inline-block;
+    width: 300px;
+}
+/* JOIN */
 .join {
     height: 30vh;
     background-color: brown;   
@@ -36,10 +40,14 @@ header {
     height: 30vh;
     background-color: burlywood;
 }
-
+/* ARTICLES */
 .articles {
     height: 30vh;
     background-color: cadetblue;
+}
+.articles img {
+    display: inline-block;
+    width: 300px;
 }
 
 .fail {
