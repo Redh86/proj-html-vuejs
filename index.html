@@ -10,45 +10,49 @@
 </head>
 <body>
     <header>
-        <div id="head" >
-            <img :src="img" alt="">
-            <ul>
-                <li v-for="element in navBar">{{element}}</li>
-            </ul>
-            <div><span>{{btn}}</span></div>
-            <div v-for="element in i">
-                <i :class="element"></i>
+        <div class="head_wrap">
+            <div id="head" >
+                <img :src="img" alt="">
+                <ul>
+                    <li v-for="element in navBar">{{element}}</li>
+                </ul>
+                <div class="head_btn"><span>{{btn}}</span></div>
+                <div v-for="element in i">
+                    <i :class="element"></i>
+                </div>
             </div>
         </div>
-
     </header>
 
     <main>
         <div class="jumbo">
-            <div class="jumbo_text">
-                <h4>Certified fitness professional</h4>
-                <h1>Take control of your health</h1>
+            <div class="jumbo_wrap">
+                <div class="jumbo_text">
+                    <h4>Certified fitness professional</h4>
+                    <h1>Take control of your health</h1>
+                    <div class="triple_cevron">
+                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <p>Curabitur non nulla sit amet nisi tempus convallis quis ac lectus dolor sit amet.</p>
+                    <div>
+                        <div class="span_cev sim_btn_you">
+                            <i class="fab fa-youtube"></i> <span>Visit my Youtube channel</span> 
+                        </div>
+                        <div class="span_cev sim_btn">
+                            <span>Buy avada today</span> <i class="fas fa-arrow-right"></i> 
+                        </div>
+                    </div>                
+                </div>
+                <i class="player" class="fas fa-play"></i>                
+            </div>
 
-                <p>Curabitur non nulla sit amet nisi tempus convallis quis ac lectus dolor sit amet.</p>
-            </div>
-            <div>
-                <div class="span_cev sim_btn_you">
-                    <i class="fab fa-youtube"></i> <span>Visit my Youtube channel</span> 
-                </div>
-                <div class="span_cev sim_btn">
-                    <span>Buy avada today</span> <i class="fas fa-arrow-right"></i> 
-                </div>
-            </div>
-            <i class="player" class="fas fa-play"></i>
         </div>
         <!-- FINE JUMBO -->
         <div class="intro">
             <div>
-                <div class="triple_cevron">
-                    <i class="fas fa-chevron-up"></i>
-                    <i class="fas fa-chevron-up"></i>
-                    <i class="fas fa-chevron-up"></i>
-                </div>
+
                 <h4>Crossfit workout</h4>
                 <h3>Push Your limits</h3>
             </div>

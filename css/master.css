@@ -1,21 +1,96 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
 /* HEADER */
 header {
-    height: 70vh;
-    background-color: rgb(202, 199, 199);
+    background-color: rgb(0, 0, 0);
+}
+#head {
+    display: flex;
+    color: gray;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0;
+}
+.head_wrap ul {
+    margin-left: 200px;
+}
+.head_wrap li {
+    display: inline-block;
+    padding-left: 30px;
+}
+.head_btn {
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    background-color: #4154fe;
+}
+
+.triple_cevron {
+    display: flex;
+    align-content: center;
+}
+.triple_cevron i {
+    margin: 0;
 }
 
 
 /* MAIN */
 .jumbo {
     height: 40vh;
-    background-color: blanchedalmond;
+    background-image: url("../img/slider82x-scaled.jpg");
 }
+.jumbo_wrap {
+    display: flex;
+    width: 90%;
+    align-content: center;
+
+}
+.jumbo_text * {
+    margin-top: 20px;
+}
+.jumbo_text {
+    margin: 0;
+}
+.jumbo_text h4{
+    color: red;
+}
+.jumbo_text h1 {
+    color: white;
+}
+.jumbo_text i {
+    color: yellow;
+}
+.jumbo_text p {
+    color: gray;
+}
+.jumbo_text .span_cev {
+    display: inline;
+}
+.jumbo_text .span_cev i {
+    color: white;
+}
+.sim_btn_you {
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    background-color: #4154fe;
+}
+.sim_btn {
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color:black;
+    margin-left: 10px;
+}
+
+/* INTRO */
 
 .intro {
     height: 50vh;
