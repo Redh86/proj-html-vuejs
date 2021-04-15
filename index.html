@@ -80,7 +80,11 @@
                     <div class="intro_square">
                         <img src="img/box3-2x.jpg" alt="">
                         <div class="intro_square_text">
-
+                            <div class="triple_cevron">
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
                             <h3>Team training</h3>
                             <h4>FInd a partner</h4>                            
                         </div>
@@ -94,7 +98,8 @@
                         <i class="fas fa-chevron-up"></i>
                     </div>
                     <div class="intro_utn">
-                        <img src="img\avatar-1-2x.jpg" alt=""> <p>Brian Johnson Las Vegas</p>
+                        <img src="img\avatar-1-2x.jpg" alt=""> 
+                        <p>Brian Johnson <span>Las Vegas</span></p>
                     </div>
                 </div>                
             </div>
@@ -112,7 +117,8 @@
                 <div class="youtube"></div>
                 <p>Arcu eu facilist ut quisque placerat nunc habitat. Magna sempre moutris, venrandis, leo integer sut pallentesque.</p>
                 <div class="sim_btn_you">
-                    <i class="fab fa-youtube"></i> <span>Visit my Youtube channel</span> 
+                    <i class="fab fa-youtube"></i> 
+                    <span>Visit my Youtube channel</span> 
                 </div>
             </div>
             <div class="tune_video">
@@ -248,7 +254,7 @@
             </div>
         </div>
         <!-- FINE ARTICLES -->
-        <div class="fail">
+        <!-- <div class="fail">
             <div class="join_text">
                 <h2>"i've failed over and over again in my life. And that is why i succeed</h2>
                 <div class="triple_cevron">
@@ -262,7 +268,7 @@
                 </div>
             </div>
         </div>
-        <!-- FINE FAIL -->
+        FINE FAIL
         <div class="partner">
             <div>
                 <img src="img\sponsor-1-2x.png" alt="">
@@ -313,8 +319,8 @@
                 </div>
             </div>
         </div>
-        <!-- FINE PARTNER -->
-        <div class="dating">
+        FINE PARTNER -->
+        <!-- <div class="dating">
             <i class="player" class="fas fa-play"></i>
             <h3>Crossfit workout of the day</h3>
             <h4>November 15th 2019</h4>
@@ -322,32 +328,32 @@
                 <span>View all Videos</span> <i class="fas fa-chevron-right"></i>
             </div>
         </div>
-        <!-- FINE DATING -->
+        FINE DATING -->
     </main>
     <footer>
         <div id="foot">
-            <div>
+            <div class="footer_logo">
                 <img :src="img" alt="">
                 <p>{{text}}</p>
                 <div v-for="element in icons">
                     <i :class="element"></i>
                 </div>
             </div>
-            <div>
+            <div class="footer_post">
                 <h4>{{ulTitle}}</h4>
                 <ul>
                     <li v-for="element in posts">{{element}}</li>
                 </ul>
             </div>
-            <div>
+            <div class="footer_contacts">
                 <h4>{{contact}}</h4>
-                <p>{{adress}}</p>
+                <span>{{adress}}</span>
                 <p>{{mobile}}</p>
                 <p>{{email}}</p>    
             </div>
-            <hr>
-            <p>{{copyright}}</p>
-        </div>
+            <p class="foot_copy">{{copyright}}</p>
+        </div>                  
+        <hr>          
     </footer>
     <script src="js/main.js"></script>
 </body>

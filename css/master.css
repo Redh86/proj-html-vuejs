@@ -33,18 +33,26 @@
     background-color: white;
     align-self: center;
 }
+li {
+    list-style: none;
+}
 /* HEADER */
 header {
     background-color: rgb(0, 0, 0);
+}
+header img{
+    margin-left: 0;
+}
+#head div:last-child {
+    margin-right: 0;
 }
 #head {
     display: flex;
     color: gray;
     width: 90%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
-    margin: 0;
 }
 .head_wrap ul {
     margin-left: 200px;
@@ -68,9 +76,7 @@ header {
     display: flex;
     height: 70vh;
     background-image: url("../img/slider82x-scaled.jpg");
-    background-position: top;
     background-size: 100%;
-    align-items: center;
 }
 .jumbo_wrap {
     display: flex;
@@ -85,9 +91,11 @@ header {
 }
 .jumbo_text h4{
     color: red;
+    font-size: 1.5em;
 }
 .jumbo_text h1 {
     color: white;
+    font-size: 5em;
 }
 .jumbo_text i {
     color: yellow;
@@ -106,7 +114,7 @@ header {
 /* INTRO */
 
 .intro {
-    height: 100vh;
+    height: 130vh;
     background-image: linear-gradient(to bottom right, blue, red);
 }
 .intro_wrap {
@@ -116,19 +124,17 @@ header {
 }
 .intro_row {
     position: absolute;
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     top: -100px;
 }
 .intro_square {
     position: relative;
-    display: flex;
-    width: 500px;
-    height: 500px;
+    width: 30%;
     background-position: center;
     background-size: cover;
-    flex-direction: column;  
+    margin: 0;
 }
 .intro_row img {
     width: 100%;
@@ -141,33 +147,51 @@ header {
     bottom: 50px;
     left: 50px;
 }
+
 .intro_square_text .triple_cevron {
     margin-bottom: 20px;
 }
+.intro_square_text h3{
+    font-size: 2em;
+}
 .intro_square_text h4 {
     color: yellow;
+    font-size: 1.5em;
+    margin-top: 5px;
 }
 .intro_text {
     position: absolute;
     display: flex;
     color: white;
+    width: 1500px;
     flex-direction: column;
-    height: 600px;
-    width: 300px;
     text-align: center;
-    top: 85%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.intro_text h2 {
+    font-size: 4.5em;
+}
+.intro_text .triple_cevron {
+    color: yellow;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .intro_utn {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-top: 20px;
 }
-
+.intro_utn span {
+    color: gray;
+}
 .intro_utn img {
-    width: 100px;
+    width: 70px;
     border-radius: 50px;
+    margin-right: 10px;
 }
 
 
@@ -176,10 +200,6 @@ header {
     position: relative;
     height: 150vh;
     background-color: rgb(255, 255, 255);
-}
-.tune p {
-    color: blue;
-    margin-top: 5px;
 }
 .ads_girl_wrap {
     position: relative;
@@ -201,6 +221,22 @@ header {
     float: right;
     width: 850px;
     height: 850px;
+    padding: 10% 0 10% 0;
+
+}
+.tune_text h4{
+    color:blue;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.tune_text h2 {
+    font-size: 4.5em;
+    padding-right: 20%;
+}
+.tune_text p {
+    font-size: 1.1em;
+    margin: 30px 0 40px 0;
+    padding-right: 10%;
 }
 .tune_text .sim_btn_you {
     background-color: red;
@@ -209,6 +245,10 @@ header {
 .tune_video {
     width: 90%;
     bottom: 0;
+}
+.tune_video p {
+    color: blue;
+    margin-top: 5px;
 }
 .tune_video_title {
     display: flex;
@@ -330,7 +370,6 @@ header {
     justify-content: space-between;
 }
 .articles_row {
-    width: 100%;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -371,6 +410,57 @@ header {
 /* FOOTER */
 
 footer {
-    height: 40vh;
-    background-color: cornflowerblue;
+    position: relative;
+    color: white;
+    height: 50vh;
+    background-color: black;
+}
+#foot {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+#foot i {
+    color: #ec5a57;
+    padding: 30px 5px 0 5px;
+}
+footer h4 {
+    padding-bottom: 30px;
+}
+.footer_logo,
+.footer_post,
+.footer_contacts {
+    width: 500px;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
+.footer_logo img{
+    margin-bottom: 30px;
+}
+.footer_logo div{
+    display: inline;
+}
+
+.footer_post li {
+    padding-bottom: 20px;
+}
+
+.footer_contacts span {
+    color: lightgrey;
+    margin-bottom: 20px;
+}
+.footer_contacts p {
+    padding-bottom: 5px;
+}
+
+.foot_copy {
+    position: absolute;
+    color:gray;
+    font-size: 0.8em;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+.foot_copy span {
+    color: white;
 }

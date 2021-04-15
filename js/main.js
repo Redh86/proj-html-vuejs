@@ -34,6 +34,6 @@ new Vue ({
             adress: "4746 Tipple road Michigan 48449",
             mobile: "Mobile: 1.800.000.0000",
             email: "Email: info@your-company.com",
-            copyright: "Copyright 2012-2020|Avada theme by ThemeFusion|All rights reserved|powered by Wordpress"
+            copyright: "©Copyright 2012-2020|Avada theme by ThemeFusion |All rights reserved|powered by Wordpress"
         }
     });
