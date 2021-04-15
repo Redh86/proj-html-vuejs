@@ -3,6 +3,8 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
+/* GENERICHE */
+/* chevron */
 .triple_cevron {
     display: flex;
     align-items: center;
@@ -10,6 +12,7 @@
 .triple_cevron i {
     margin: 0;
 }
+/* bottoni */
 .sim_btn_you {
     display: inline;
     color: white;
@@ -26,6 +29,7 @@
     background-color:black;
     margin-left: 10px;
 }
+/* player */
 .player {
     color:#4154fe;
     padding: 20px;
@@ -73,11 +77,9 @@ header img{
     background-color: yellow;
 }
 
-
-
-
 /* MAIN */
 /* FIXED */
+
 .fixed {
     position: fixed;
     right: 5px;
@@ -97,7 +99,9 @@ header img{
     color: green;
     font-weight: 1000;
 }
+
 /* JUMBO */
+
 .jumbo {
     display: flex;
     height: 70vh;
@@ -109,6 +113,7 @@ header img{
     width: 90%;
     align-items: center;
 }
+/* jumbo text */
 .jumbo_text * {
     margin-top: 20px;
 }
@@ -136,7 +141,6 @@ header img{
     color: white;
 }
 
-
 /* INTRO */
 
 .intro {
@@ -155,6 +159,7 @@ header img{
     justify-content: space-between;
     top: -100px;
 }
+/* intro tripla immagine */
 .intro_square {
     position: relative;
     width: 30%;
@@ -174,7 +179,6 @@ header img{
     bottom: 50px;
     left: 50px;
 }
-
 .intro_square_text .triple_cevron {
     margin-bottom: 20px;
 }
@@ -186,6 +190,7 @@ header img{
     font-size: 1.5em;
     margin-top: 5px;
 }
+/* intro citazione */
 .intro_text {
     position: absolute;
     display: flex;
@@ -208,8 +213,6 @@ header img{
 }
 .intro_utn {
     display: flex;
-    justify-content: center;
-    align-content: center;
     margin-top: 20px;
 }
 .intro_utn span {
@@ -221,12 +224,13 @@ header img{
     margin-right: 10px;
 }
 
-
 /* TUNE */
+
 .tune {
     height: 150vh;
     background-color: rgb(255, 255, 255);
 }
+/* immagine invasiva sinistra */
 .ads_girl_wrap {
     position: relative;
 }
@@ -243,12 +247,12 @@ header img{
     top: -100px;
     left: 0;
 }
+/* testo a destra */
 .tune_text {
     float: right;
     width: 850px;
     height: 850px;
     padding: 10% 0 10% 0;
-
 }
 .tune_text h4{
     color:blue;
@@ -267,7 +271,7 @@ header img{
 .tune_text .sim_btn_you {
     background-color: red;
 }
-
+/* tre video in basso */
 .tune_video {
     height: 40%;
 }
@@ -304,6 +308,7 @@ header img{
 }
 
 /* JOIN */
+
 .join {
     display: flex;
     height: 70vh;
@@ -322,13 +327,13 @@ header img{
     padding: 15px 50px 15px 50px;
     width: 200px;
     border: none;
-
 }
 .join_wrap {
     display: flex;
     width: 90%;
     align-items: center;
 }
+/* join testo */
 .join_text * {
     margin-top: 20px;
 }
@@ -357,7 +362,9 @@ header img{
 .join_text .span_cev i {
     color: white;
 }
+
 /* LINK */
+
 .link{
     background-color: black;
     padding: 5% 0 5% 0;
@@ -395,7 +402,9 @@ header img{
 .link_wrap .span_cev {
     font-size: 1.5em;
 }
+
 /* ARTICLES */
+
 .articles {
     background-color: rgb(255, 255, 255);
 }
@@ -443,6 +452,7 @@ header img{
 .articles_text h3 {
     padding-bottom: 10px;
 }
+
 /* FAIL */
 
 .fail {
@@ -501,10 +511,8 @@ header img{
     padding-bottom: 20px;
 }
 .partner_wrap .triple_cevron {
-    display: flex;
     color: #4154fe;
     padding-bottom: 10px;
-    align-content: center;
     justify-content: center;
     padding: 0;
     margin: 0;
@@ -519,7 +527,9 @@ header img{
 .partner_wrap .span_cev {
     font-size: 1.5em;
 }
+
 /* DATING */
+
 .dating {
     display: flex;
     color: white;
@@ -575,20 +585,21 @@ footer h4 {
     text-align: center;
     padding: 5% 0 5% 0;
 }
+/* div a sinistra */
 .footer_logo img{
     margin-bottom: 30px;
 }
 .footer_logo div{
     display: inline;
 }
-
+/* div centrale */
 .footer_post li {
     padding-bottom: 20px;
 }
 #foot .footer_post i {
     color: white;
 }
-
+/* div a destra */
 .footer_contacts span {
     color: lightgrey;
     margin-bottom: 20px;
@@ -596,7 +607,7 @@ footer h4 {
 .footer_contacts p {
     padding-bottom: 5px;
 }
-
+/* hr copyright */
 .foot_copy {
     position: absolute;
     color:gray;
