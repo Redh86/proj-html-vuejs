@@ -67,6 +67,12 @@ header img{
     border-radius: 25px;
     background-color: #4154fe;
 }
+#head li:last-child{
+    color:black;
+    padding: 0 1px 0 1px;
+    margin: 5px;
+    background-color: yellow;
+}
 
 
 
@@ -140,6 +146,7 @@ header img{
     width: 100%;
     filter: brightness(0.7);
     border-bottom-right-radius: 25px;
+    box-shadow: 4px 5px 20px 0 black;
 }
 .intro_square_text{
     position: absolute;
@@ -197,7 +204,6 @@ header img{
 
 /* TUNE */
 .tune {
-    position: relative;
     height: 150vh;
     background-color: rgb(255, 255, 255);
 }
@@ -243,8 +249,7 @@ header img{
 }
 
 .tune_video {
-    width: 90%;
-    bottom: 0;
+    height: 40%;
 }
 .tune_video p {
     color: blue;
@@ -256,9 +261,8 @@ header img{
     justify-content: space-between;
 }
 .tune_video_row {
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
 }
 .tune_video_row div {
     padding: 30px;
@@ -279,8 +283,6 @@ header img{
     z-index: 999;
 }
 
-
-
 /* JOIN */
 .join {
     display: flex;
@@ -292,14 +294,13 @@ header img{
 }
 .join input {
     border-radius: 25px;
-    width: 400px;
-    height: 30px;
+    width: 700px;
+    height: 50px;
 }
 .join .sim_btn {
     background-color: #4154fe;
-    padding: 6px 50px 6px 50px;
+    padding: 15px 50px 15px 50px;
     width: 200px;
-    height: 30px;
     border: none;
 
 }
@@ -316,12 +317,16 @@ header img{
 }
 .join_text h4{
     color: red;
+    font-size: 1.5em;
 }
 .join_text h1 {
     color: white;
+    font-size: 4em;
+    padding-right: 40%;
 }
 .join_text i {
     color: yellow;
+    font-size: 1.5em;
 }
 .join_text p {
     color: gray;
@@ -345,17 +350,30 @@ header img{
 }
 .link_wrap > div {
     color:white;
-    width: 500px;
-    height: 700px;
+    width: 400px;
+    height: 600px;
     text-align: center;
-    padding: 5% 0 5% 0;
+    padding: 5% 3% 5% 3%;
     border: 2px solid #4154fe;
-}
-.link_wrap h5 {
-    color: yellow;
 }
 .link_wrap > div > i{
     font-size: 10em;
+    padding-bottom: 20px;
+}
+.link_wrap h4 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+.link_wrap h5 {
+    color: yellow;
+    font-size: 1.8em;
+    padding-bottom: 30px;
+}
+.link_wrap p {
+    padding: 30px;
+}
+.link_wrap .span_cev {
+    font-size: 1.5em;
 }
 /* ARTICLES */
 .articles {
@@ -368,15 +386,26 @@ header img{
 .articles_title {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
+}
+.articles_title h3{
+    margin-left: 0;
+}
+.articles_title .span_cev {
+    margin-right: 0;
 }
 .articles_row {
     display: flex;
+}
+.articles_row > div {
+    display: flex;
     align-content: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 .articles_row img {
     width: 90%;
-    border-bottom-right-radius: 25px;
+    margin-bottom: 20px;
 }
 .articles_row_img {
     position: relative;
@@ -390,6 +419,9 @@ header img{
 }
 .articles_text {
     margin: 0 0 5% 5%;
+}
+.articles_text h3 {
+    padding-bottom: 10px;
 }
 /* FAIL */
 
@@ -412,7 +444,7 @@ header img{
 footer {
     position: relative;
     color: white;
-    height: 50vh;
+    height: 70vh;
     background-color: black;
 }
 #foot {
@@ -443,6 +475,9 @@ footer h4 {
 
 .footer_post li {
     padding-bottom: 20px;
+}
+#foot .footer_post i {
+    color: white;
 }
 
 .footer_contacts span {
