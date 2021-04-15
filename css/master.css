@@ -426,17 +426,106 @@ header img{
 /* FAIL */
 
 .fail {
-    height: 40vh;
-    background-color: chartreuse;
+    display: flex;
+    color: white;
+    height: 70vh;
+    align-content: center;
+    justify-content: center;
+    background-image: url("../img/banner2-2x.jpg");
+    background-position: top;
+    background-size: 100%;
+}
+.fail_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 30% 0 30%;
+}
+.fail_text h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.fail_text .triple_cevron{
+    color: yellow;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.fail_text .sim_btn {
+    background-color: #4154fe;
+    margin: 5% 30% 0 30%;
+    align-self: center;
+    border: none;
 }
 
-.partner {
-    height: 20vh;
-    background-color: chocolate;
+/* PARTNER */
+
+.partner{
+    background-color: white;
+    padding: 5% 0 5% 0;
 }
+.partner_wrap {
+    display: flex;
+    width: 90%;
+    align-content: center;
+    justify-content: space-between;
+}
+.partner_wrap > div {
+    color:black;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    padding: 5% 3% 5% 3%;
+}
+.partner_wrap > div > img{
+    padding-bottom: 20px;
+}
+.partner_wrap .triple_cevron {
+    display: flex;
+    color: #4154fe;
+    padding-bottom: 10px;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.partner_wrap h5 {
+    font-size: 1.8em;
+    padding-bottom: 30px;
+}
+.partner_wrap p {
+    padding: 30px;
+}
+.partner_wrap .span_cev {
+    font-size: 1.5em;
+}
+/* DATING */
 .dating {
-    height: 30vh;
-    background-color: coral;
+    display: flex;
+    color: white;
+    height: 70vh;
+    align-content: center;
+    justify-content: center;
+    background-image: url("../img/banner14-2x.jpg");
+    background-color: linear-gradient(to bottom right, rgb(0, 0, 255, 0.3), rgb(255, 0, 0, 0.3));
+    background-position: top;
+    background-size: 100%;
+}
+.dating_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 30% 0 30%;
+}
+.dating_text h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.dating_text h4 {
+    color: yellow;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 /* FOOTER */
